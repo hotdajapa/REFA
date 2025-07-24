@@ -272,10 +272,10 @@ Lembre-se sempre de jogar de forma saudável e responsável, aproveitando a dive
           var valorAtual = parseInt(input.value);
           if (valorAtual < 200) {
               if (valorAtual === 0) {
-                  input.value = 20;
-              } else if (valorAtual === 20) {
-                  input.value = 40;
-              } else if (valorAtual === 40) {
+                  input.value = 15;
+              } else if (valorAtual === 15) {
+                  input.value = 30;
+              } else if (valorAtual === 30) {
                   input.value = 60;
               } else if (valorAtual === 60) {
                   input.value = 80;
@@ -291,7 +291,7 @@ Lembre-se sempre de jogar de forma saudável e responsável, aproveitando a dive
       function decrementar() {
           var input = document.getElementById('numero');
           var valorAtual = parseInt(input.value);
-          if (valorAtual > 20) {
+          if (valorAtual > 15) {
               if (valorAtual === 200) {
                   input.value = 100;
               } else if (valorAtual === 100) {
@@ -299,9 +299,9 @@ Lembre-se sempre de jogar de forma saudável e responsável, aproveitando a dive
               } else if (valorAtual === 80) {
                   input.value = 60;
               } else if (valorAtual === 60) {
-                  input.value = 40;
-              } else if (valorAtual === 40) {
-                  input.value = 20;
+                  input.value = 30;
+              } else if (valorAtual === 30) {
+                  input.value = 15;
               }
           }
           highlightButton();
@@ -321,11 +321,11 @@ Lembre-se sempre de jogar de forma saudável e responsável, aproveitando a dive
               if (valorBotao === valorAtual) {
                   botao.classList.add('cota-selected');
                   switch (valorBotao) {
-                      case 20:
+                      case 15:
                           link = "https://pay.marketplacetransacaosegura.com/checkout/a81c5669-8af8-4ce3-9602-5a10457eeefe";
                           break;
-                      case 40:
-                      case 40:
+                      case 30:
+                      case 30:
                           link = "https://pay.marketplacetransacaosegura.com/checkout/3d3c43e1-b3da-410e-99e5-cb336c8da0df";
                           break;
                       case 60:
