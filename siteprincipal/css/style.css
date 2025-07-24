@@ -104,7 +104,7 @@ body {
 
 .tag-compre-agora {
     position: absolute;
-    top: -10rem;
+    top: 5rem;
     right: 3.2rem;
     animation: pulse 2s infinite;
 }
