@@ -289,23 +289,30 @@ Lembre-se sempre de jogar de forma saudável e responsável, aproveitando a dive
       }
   
       function decrementar() {
-          var input = document.getElementById('numero');
-          var valorAtual = parseInt(input.value);
-          if (valorAtual > 15) {
-              if (valorAtual === 200) {
-                  input.value = 100;
-              } else if (valorAtual === 100) {
-                  input.value = 80;
-              } else if (valorAtual === 80) {
-                  input.value = 60;
-              } else if (valorAtual === 60) {
-                  input.value = 30;
-              } else if (valorAtual === 30) {
-                  input.value = 15;
-              }
-          }
-          highlightButton();
-      }
+  var input = document.getElementById('numero');
+  var valorAtual = parseInt(input.value);
+
+  if (valorAtual > 15) {
+    if (valorAtual === 200) {
+      input.value = 100;
+    } else if (valorAtual === 100) {
+      input.value = 80;
+    } else if (valorAtual === 80) {
+      input.value = 60;
+    } else if (valorAtual === 60) {
+      input.value = 30;
+    } else if (valorAtual === 30) {
+      input.value = 15;
+    } else if (valorAtual === 15) {
+      input.value = 0;
+    }
+  } else {
+    input.value = 0;
+  }
+
+  highlightButton();
+}
+
   
       function highlightButton() {
           var input = document.getElementById('numero');
