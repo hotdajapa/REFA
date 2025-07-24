@@ -26,37 +26,50 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
+/* Remove margens do body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Seção do banner */
 .banner-viva-sorte {
-  width: 100%;
-  padding: 10px;
-  background: #fff; /* opcional */
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: #fff; /* você pode remover ou mudar */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Container central do banner */
 .banner-container {
-  max-width: 300px;
   width: 100%;
+  max-width: 100%;
 }
 
+/* Imagem do banner */
 .banner-img {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
+/* Responsividade opcional para celulares menores */
 @media (max-width: 600px) {
-  .banner-viva-sorte {
-    padding: 5px;
-  }
-
   .banner-img {
-    border-radius: 6px;
+    width: 100vw;
   }
 }
+
 
 
 .logo img {
