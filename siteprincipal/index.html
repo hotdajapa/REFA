@@ -124,7 +124,7 @@ src="https://www.facebook.com/tr?id=634450442547482&ev=PageView&noscript=1"
               <div class="cota-qtd">
                   +30
               </div>
-              <h1>R$39,90</h1>
+              <h1>R$29,90</h1>
               <h2>SELECIONAR</h2>
           </button>
   
@@ -324,7 +324,9 @@ Lembre-se sempre de jogar de forma saudável e responsável, aproveitando a dive
   
           botoesCotas.forEach(function (botao) {
               botao.classList.remove('cota-selected');
-              var valorBotao = parseInt(botao.querySelector('.cota-qtd').innerText.trim());
+             var textoQtd = botao.querySelector('.cota-qtd').innerText.trim().replace('+', '');
+var valorBotao = parseInt(textoQtd);
+
               if (valorBotao === valorAtual) {
                   botao.classList.add('cota-selected');
                   switch (valorBotao) {
